@@ -1,0 +1,23 @@
+{
+  "name": "link-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiroe66/link-shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiroe66/link-shortener/issues"
+  },
+  "homepage": "https://github.com/shiroe66/link-shortener#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
