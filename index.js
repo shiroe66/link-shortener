@@ -12,5 +12,4 @@ app.use(indexRoutes)
 app.use("/links", linkRoutes)
 
 connectDB()
-  .then(() => app.listen(3000))
-  .catch((e) => console.log(e))
+app.listen(3000)
