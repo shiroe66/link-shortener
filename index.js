@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const connectDB = require("./config/db")
 
 const indexRoutes = require("./routes/index")
 const linkRoutes = require("./routes/links")
@@ -10,4 +11,6 @@ app.set("views", "views")
 app.use(indexRoutes)
 app.use("/links", linkRoutes)
 
-app.listen(3000)
+connectDB()
+  .then(() => app.listen(3000))
+  .catch((e) => console.log(e))
