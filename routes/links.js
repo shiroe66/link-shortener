@@ -7,7 +7,7 @@ router.post("/short", async (req, res) => {
   const { link } = req.body
 
   try {
-    const url = await Link.findOne({ link })
+    let url = await Link.findOne({ link })
 
     if (url) {
       return res.json(url)
@@ -26,7 +26,7 @@ router.post("/short", async (req, res) => {
   } catch (e) {
     return res.status(500).json({
       status: 500,
-      message: e,
+      message: JSON.stringify(e),
     })
   }
 })
